@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar{
+    display: none;
+}
+#about{
+    background-image: url('../src/patterns/dot-grid.png');
+}
+
+#landing{
+    background-image: url('../src/patterns/dot-grid.png');
+    height: 100vh;
+}
+#services{
+    background-image: url('../src/patterns/dot-grid.png');
+}
+#contacts{
+    background-image: url('../src/patterns/dot-grid.png');
+}
+#navigation{
+    background-image: url('../src/patterns/dot-grid.png');
+}
