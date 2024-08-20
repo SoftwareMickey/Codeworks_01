@@ -9,6 +9,7 @@ import services from './assets/service.png';
 import cont from './assets/telephone.png';
 import about from './assets/about.png';
 import close from './assets/close.png';
+import logo from './assets/logo.png';
 import { modalActions } from "../store/modal-state";
 
 export default function MobileNavigation(){
@@ -28,7 +29,8 @@ export default function MobileNavigation(){
         return <div className="relative z-[100] h-[100vh]">
             <div className="flex justify-between">
                 <div className="mt-2">
-                    <p className="font-cambo font-semibold ml-4">CodeWorks Solution Limited</p>
+                    {/* <p className="font-cambo font-semibold ml-4">CodeWorks Solution Limited</p> */}
+                    <img src={logo} alt="pic" className='h-6'/>
                     <p className="text-[14px] font-cambo ml-4">Quality. Secure. Scalable</p>
                 </div>
                 <div className="mr-4 mt-4" onClick={closeModalHandler}>
@@ -38,7 +40,7 @@ export default function MobileNavigation(){
             <div className='flex flex-col mt-6'>
                 <div className="flex ml-4">
                     <img src={home} alt="pic" className="h-4 mt-3"/>
-                    <NavLink to='' className={(isActive) => isActive? "ml-2 text-black my-2 font-cambo" : 'mx-4 font-pacifico my-6'} end>Home</NavLink>
+                    <NavLink to='' className={(isActive) => isActive? "ml-2 text-black my-2 font-cambo" : 'mx-4 font-pacifico my-6'} end onClick={closeModalHandler}>Home</NavLink>
                 </div>
                 <hr className="mx-4"/>
 

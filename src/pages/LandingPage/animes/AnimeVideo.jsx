@@ -1,12 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
 
+import video1 from '../../../../public/animation/mobile.mp4';
+import video2 from '../../../../public/animation/mobile1.mp4';
+import video3 from '../../../../public/animation/mobile2.mp4';
+
 const VideoPlayer = () => {
     
-  const videos = [
-    '../../../../public/animation/mobile.mp4',
-    '../../../../public/animation/mobile1.mp4',
-    '../../../../public/animation/mobile2.mp4', 
-  ];
+  // const videos = [
+  //   '../../../../public/animation/mobile.mp4',
+  //   '../../../../public/animation/mobile1.mp4',
+  //   '../../../../public/animation/mobile2.mp4', 
+  // ];
+
+  const videos = [video1, video2, video3]
 
   const videoRef = useRef();
 
@@ -27,7 +33,7 @@ const VideoPlayer = () => {
         <video 
             ref={videoRef}
             onEnded={handleVideoEnd} 
-            className="absolute w-[50%] h-[90vh] object-cover pointer-events-none sm:w-full sm:h-[50vh]"
+            className="absolute ml-10 w-[24%] h-[80vh] shadow-custom-medium object-cover bottom-10 rounded pointer-events-none sm:w-full sm:h-[50vh]"
             autoPlay 
             muted 
             playsInline>
