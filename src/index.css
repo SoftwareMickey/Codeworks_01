@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar{
+    display: none;
+}
+#about{
+    background-image: url('../src/patterns/dot-grid.png');
+}
+
+#landing{
+    background-image: url('../src/patterns/dot-grid.png');
+    height: 100vh;
+}
+/*#services{
+    background-image: url('../src/patterns/dot-grid.png');
+}
+/*#contacts{
+    background-image: url('../src/patterns/dot-grid.png');
+}*/
+#navigation{
+    background-image: url('../src/patterns/dot-grid.png');
+}
+.fixed-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000; 
+    border: none;
+   
+    padding: 1px;
+    margin-left: 0%;
+}
+
+.fixed-whatsapp img {
+    width: 150px; 
+    height: 100px; 
+}
+.phone-input-container {
+    width: 100%; /* Ensures it takes full width */
+}
+
+.phone-input-dropdown {
+    height: 100%; /* Adjust the dropdown height if necessary */
+}
